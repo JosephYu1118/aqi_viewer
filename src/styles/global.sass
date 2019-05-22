@@ -1,0 +1,104 @@
+// ====================
+//      FONT
+// ==============================
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&subset=chinese-traditional,japanese')
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext')
+
+// ====================
+//      COLORS
+// ==============================
+$c_black: #333
+$c_white: #DDD
+
+$c_green: #5be7a9
+$c_yellow: #f8fe85
+$c_orange: #ffbd67
+$c_red: #c70039
+$c_purple: #aa5c9f
+$c_burgundy: #900048
+
+$c_blue: #1f3c88
+
+// ====================
+//      SIZE
+// ==============================
+
+// ====================
+//      TEXT
+// ==============================
+
+// ====================
+//      MIXIN
+// ==============================
+= center_position
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+= center_flex($j: center, $a: center)
+  display: flex
+  justify-content: $j
+  align-items: $a
+
+= size($w, $h: $w, $bdrs: 0)
+  width: $w
+  height: $h
+  border-radius: $bdrs
+
+// ====================
+//      KEYFRAMES
+// ==============================
+
+// ====================
+//      DEBUG
+// ==============================
+*
+  // border: 1px solid #000
+
+// ====================
+//      ALL
+// ==============================
+*
+  font-family: 'Ubuntu', 'Noto Sans TC'
+  letter-spacing: 1.5px
+  line-height: 150%
+  position: relative
+  user-select: none
+
+html, body
+  width: 100%
+  min-height: 100vh
+  -webkit-overflow-scrolling: touch
+
+body
+  background-color: $c_black
+  color: $c_white
+
+// --------------------
+//      RESET
+// ------------------------------
+html, body, h1, h2, h3, h4, h5, h6, hr, p, ul, li
+  margin: 0
+  padding: 0
+
+ul
+  list-style: none
+
+button, input, select, textarea, label
+  margin: 0
+
+button
+  &:focus
+    outline: none
+
+a
+  text-decoration: none
+
+// ====================
+//      MAIN
+// ==============================
+
+// ====================
+//      RWD
+// ==============================
